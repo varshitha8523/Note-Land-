@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* General Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box; /* Ensure padding and borders are included in element's width and height */
+font-family: 'Poppins', sans-serif;
+}
+
+/* Main Container Section One */
+.one {
+background: #282e44;
+height: 100vh;
+display: flex;
+color: white;
+font-size: xx-large;
+justify-content: center;
+align-items: center;
+}
+
+.one img {
+height: 10vh;
+}
+
+/* Main Container Section Two */
+.two {
+height: auto;
+display: flex;
+width: 100vw;
+
+
+}
+
+/* Left Side Section */
+.two .left {
+padding: 1rem;
+width: 25%;
+background: #282e44;
+display: flex;
+flex-direction: column;
+justify-content: space-between; /* Distribute space evenly between the top and bottom sections */
+
+}
+
+.two .left .top {
+display: flex;
+font-size: large;
+color: white;
+justify-content: center;
+
+}
+
+.two .left .top img {
+height: 6vh;
+}
+.two .left .middle{
+display: flex;
+    flex-direction: column;
+    align-items: center;}
+.two .left .middle .notes{
+    height: 18vh;
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    padding: 0.8rem;
+    margin: 1rem 0 ;
+    overflow: hidden;
+    cursor: pointer;
+}
+.two .left .middle .notes h1{
+    color: #02549e;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    width: 100%; 
+}
+    
+
+
+
+.two .left .middle .notes p {
+    color: black;
+    font-size: medium;
+    white-space: nowrap;      
+    overflow: hidden;           
+    text-overflow: ellipsis;   
+    width: 100%;               
+    display: block;            
+    max-width: 100%;            
+    box-sizing: border-box;    
+}
+    
+
+    
+
+
+
+.two .left .bottom {
+display: flex;
+justify-content: center; /* Center the button horizontally */
+align-items: flex-end; /* Align button at the bottom */
+flex-grow: 1; /* Take up available space */
+}
+
+.two .left .bottom button {
+width: 100%;
+height: 6vh;
+border-radius: 12px;
+font-size: large;
+cursor: pointer;
+overflow: hidden;
+outline: none;
+}
+
+/* Right Side Section */
+.two .right {
+width: 75%; /* Adjust width to fit the layout */
+background: #02549e;
+overflow: hidden; /* Prevent overflow */
+padding: 2rem; /* Add padding for spacing */
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative; /* Ensure elements are contained */
+}
+
+/* Content Inside Right Section */
+.two .right .rightContent {
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.two .right .rightContent img {
+max-width: 150%; /* Ensure image doesn't overflow */
+height: 75vh; /* Maintain aspect ratio */
+}
+
+/* Form Styles */
+.two .right .form {
+width: 100%; /* Ensure form fits within the container */
+max-width: 600px; /* Set a maximum width for the form */
+background: white;
+padding: 1.5rem;
+border-radius: 12px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.form  img{
+height:5vh;
+width:auto;
+margin-left: 32rem;
+cursor: pointer;
+
+}
+.two .right .form input,
+.two .right .form textarea {
+width: 100%; /* Make input and textarea full width */
+max-width: 100%; /* Ensure they don't overflow */
+margin-bottom: 1rem;
+padding: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 8px;
+font-size: 1rem;
+border: none;
+outline: none;
+border-bottom: 2px solid black
+}
+
+.two .right .form textarea {
+resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+.two .right .form button {
+width: 50%;
+padding: 1rem;
+background-color: #282e44;
+color: white;
+border: none;
+border-radius: 12px;
+cursor: pointer;
+font-size: 1rem;
+text-align: center;
+margin-top: 1rem;
+}
+/* section notescontent */
+
+.two .right .notescontent{
+       
+    width: 100%; 
+    max-width: 800px;     
+
+}
+.two .right   .notescontent .header{
+    display: flex;
+   justify-content: space-between;
+    height: 20vh;
+    background: white;
+    margin-top:auto;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    width: 120%;
+    margin-left: -5rem;
+
+}
+.two .right .notescontent  .header .buttons{
+    width: 50%;
+   display: flex;
+   margin-top: -0.8rem;
+    margin-right:-8rem;
+
+}
+
+
+.two .right .notescontent  .header .buttons button{
+    border: none;
+    border-radius: 12px;
+    margin-left: 1rem;
+    color: white;
+    font-size: large;
+    height: 10vh;
+    padding: 1rem;
+
+}
+.two .right  .notescontent .header .buttons #task{
+    background: cadetblue;
+    cursor: pointer;
+   
+
+}
+.two .right   .notescontent .header .buttons #delete{
+    background: #F4511E;
+    cursor: pointer;
+
+}
+
+.two .right  .notescontent   .contents{
+background: white;
+height: 60vh;
+width: auto;
+border-radius: 12px;
+padding: 2rem;
+
+
+
+
+}
+.two .right  .notescontent .contents h1{
+    color:  #02549e;;
+}
+.two .right  .notescontent .contents label{
+    font-size: large;
+
+}
+
+.two .right  .notescontent  hr{
+    border-bottom: none;
+    border-left: none;
+    border-right:none ;
+    border-top:1px solid black;
+}
+ .overlay {
+    display: block; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Black with transparency */
+    z-index: 1000;
+    display: flex;
+    align-content: center;
+    padding-left: 30rem;
+
+}
+
+
+  .overlay  .taskDiv{
+    
+    height: 19vh;
+    width:50%;
+    padding: 0.8rem;
+    border-radius: 12px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+  
+   
+
+}
+
+.overlay .taskDiv  img{
+    height:2.8vh;
+    width:9%;
+    margin-left: 20rem;
+    cursor: pointer;
+}
+ .overlay .taskDiv input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+ .overlay .taskDiv button {
+    border: none;
+    border-radius: 12px;
+    color: white;
+    background: cadetblue;
+    padding: 0.4rem ;
+    margin-left:8.5rem;
+    text-align: center;
+    width: 30%;
+    cursor: pointer;
+    
+}
+.horizontal{
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+}
+
+.img{
+    height: 1.8vh;
+    width: 2.8%;
+}
+
+
